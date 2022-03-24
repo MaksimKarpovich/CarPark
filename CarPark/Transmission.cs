@@ -4,17 +4,20 @@ using System.Text;
 
 namespace CarPark
 {
+    /// <summary>
+    /// Класс, описывающий элемент трансмиссии
+    /// </summary>
     internal class Transmission
     {
         private string Type = "";
         private int NumberOfGears = 0;
         private string Creater = "";
 
-        public Transmission(string type, int numberofgears, string creater) 
+        public Transmission(string Type, int NumberOfGears, string Creater) 
         {
-            Type = type;
-            NumberOfGears = numberofgears;
-            Creater = creater;
+            this.Type = Type;
+            this.NumberOfGears = NumberOfGears;
+            this.Creater = Creater;
         }
 
         public void Info()

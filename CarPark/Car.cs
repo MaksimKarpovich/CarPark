@@ -4,28 +4,31 @@ using System.Text;
 
 namespace CarPark
 {
+    /// <summary>
+    /// Класс, описывающий элемент машина
+    /// </summary>
     internal class Car
     {
         private string Name;
-        private Motor m;
-        private Chassis c;
-        private Transmission t;
+        private Motor Motor;
+        private Chassis Chassis;
+        private Transmission Transmission;
 
-        public Car(Motor motor, Chassis chassis, Transmission tra, string name) 
+        public Car(Motor Motor, Chassis Chassis, Transmission Transmission, string Name) 
         {
-            m = motor;
-            c = chassis;
-            t = tra;
-            Name = name;
+            this.Motor = Motor;
+            this.Chassis = Chassis;
+            this.Transmission = Transmission;
+            this.Name = Name;
         }
 
         public void Info() 
         {
             Console.WriteLine("----------------------------------------------");
             Console.WriteLine("Параметры сущности \'" + this.Name + "\':\n");
-            this.m.Info();
-            this.c.Info();
-            this.t.Info();
+            this.Motor.Info();
+            this.Chassis.Info();
+            this.Transmission.Info();
             Console.WriteLine("----------------------------------------------");
         }
 

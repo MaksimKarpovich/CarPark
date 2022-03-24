@@ -4,6 +4,9 @@ using System.Text;
 
 namespace CarPark
 {
+    /// <summary>
+    /// Класс, описывающий элемент двигатель
+    /// </summary>
     internal class Motor
     {
         private double Power = 0;
@@ -11,12 +14,12 @@ namespace CarPark
         private string Type = "";
         private string SerialNumer = "";
 
-        public Motor(double power, double volume, string type, string serial) 
+        public Motor(double Power, double Volume, string Type, string Serial) 
         {
-            Power = power;
-            Volume = volume;
-            Type = type;
-            SerialNumer = serial;
+            this.Power = Power;
+            this.Volume = Volume;
+            this.Type = Type;
+            this.SerialNumer = Serial;
         }
 
         public void Info() 

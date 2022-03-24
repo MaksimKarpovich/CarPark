@@ -4,17 +4,20 @@ using System.Text;
 
 namespace CarPark
 {
+    /// <summary>
+    /// Класс, описывающий элемент шасси
+    /// </summary>
     internal class Chassis
     {
         private int NumberOfWheels = 0;
         private string Number = "";
         private double LoadCapacity = 0.0;
 
-        public Chassis(int numberofwheels, string number, double loadcapacity) 
+        public Chassis(int NumberOfWheels, string Number, double LoadCapacity) 
         {
-            NumberOfWheels = numberofwheels;
-            Number = number;
-            LoadCapacity = loadcapacity;
+            this.NumberOfWheels = NumberOfWheels;
+            this.Number = Number;
+            this.LoadCapacity = LoadCapacity;
         }
 
         public void Info()
