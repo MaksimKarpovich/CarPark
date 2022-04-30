@@ -9,27 +9,22 @@ namespace CarPark
     /// </summary>
     internal class Car
     {
-        private string Name;
-        private Motor Motor;
-        private Chassis Chassis;
-        private Transmission Transmission;
+        protected Motor Motor;
+        protected Chassis Chassis;
+        protected Transmission Transmission;
 
-        public Car(Motor Motor, Chassis Chassis, Transmission Transmission, string Name) 
+        public Car(Motor Motor, Chassis Chassis, Transmission Transmission) 
         {
             this.Motor = Motor;
             this.Chassis = Chassis;
             this.Transmission = Transmission;
-            this.Name = Name;
         }
 
         public void Info() 
         {
-            Console.WriteLine("----------------------------------------------");
-            Console.WriteLine("Параметры сущности \'" + this.Name + "\':\n");
             this.Motor.Info();
             this.Chassis.Info();
             this.Transmission.Info();
-            Console.WriteLine("----------------------------------------------");
         }
 
 
